@@ -1,4 +1,4 @@
-import { SYMBOLS_CLASSIC } from '../../constants/symbols.constants';
+import { SYMBOLS_HALLOWEEN } from '../../constants/symbols.constants';
 import { resetAnimations } from '../../utils/animation.util';
 import { SMSoundService } from '../../services/slot-machine/sound/slot-machine-sound.service';
 import { SMVibrationService } from '../../services/slot-machine/vibration/slot-machine-vibration.service';
@@ -68,9 +68,9 @@ export class SlotMachine {
         handleUseCoin,
         handleGetPrice,
         reelCount = 3,
-        symbols = SYMBOLS_CLASSIC,
+        symbols = SYMBOLS_HALLOWEEN,
         isPaused = false,
-        speed = -0.552, // TODO: Make enum and match sounds too.
+        speed = -0.200, // TODO: Make enum and match sounds too.
     ) {
         this.init(wrapper, handleUseCoin, handleGetPrice, reelCount, symbols, speed);
 
